@@ -1,12 +1,10 @@
-import { NextResponse } from 'next/server'
+import { NextApiRequest, NextApiResponse } from 'next'
 import { cities } from '../../lib/cities'
 import { COURSES } from '../../lib/content/courses'
 
-export const revalidate = 3600 // ISR: revalidate every hour
-
-export async function GET() {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   const baseUrl = 'https://devsecit.com'
-  
+
   const staticPages = [
     { url: '/', priority: '1.0', changefreq: 'weekly' },
     { url: '/about', priority: '0.85', changefreq: 'monthly' },
@@ -33,23 +31,21 @@ export async function GET() {
   }))
 
   const allPages = [...staticPages, ...coursePages, ...cityPages]
-  
+
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${allPages
-  .map(page => `  <url>
+      .map(page => `  <url>
     <loc>${baseUrl}${page.url}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
     <changefreq>${page.changefreq}</changefreq>
     <priority>${page.priority}</priority>
   </url>`)
-  .join('\n')}
+      .join('\n')}
 </urlset>`
 
-  return new NextResponse(sitemap, {
-    headers: {
-      'Content-Type': 'application/xml; charset=utf-8',
-      'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=86400',
-    },
-  })
+  res.setHeader('Content-Type', 'application/xml; charset=utf-8')
+  res.setHeader('Cache-Control', 'public, s-maxage=3600, stale-while-revalidate=86400')
+  res.write(sitemap)
+  res.end()
 }
