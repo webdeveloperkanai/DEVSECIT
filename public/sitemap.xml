@@ -4,63 +4,81 @@
   <!-- Primary Pages -->
   <url>
     <loc>https://devsecit.com/</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://devsecit.com/about</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://devsecit.com/services</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://devsecit.com/pricing</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://devsecit.com/portfolio</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/virtual-cto</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/process</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/careers</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/investors</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/ai-solutions</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
 
   <!-- Legal Pages -->
   <url>
     <loc>https://devsecit.com/privacy</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://devsecit.com/terms</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -68,135 +86,297 @@
   <!-- Course Pages - High Priority for Educational Content -->
   <url>
     <loc>https://devsecit.com/courses/full-stack-web-development</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/devsecops</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/cyber-security-ethical-hacking</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/mobile-app-development</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/cloud-computing</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/ai-machine-learning</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/secure-software-engineering</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/qa-testing</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/business-analysis</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://devsecit.com/courses/blockchain-development</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- City Pages - High Priority for Local SEO -->
+  <!-- City Pages - Major Cities (High Priority for Local SEO) -->
   <url>
     <loc>https://devsecit.com/cities/delhi</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/mumbai</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/bangalore</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/bengaluru</loc>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/hyderabad</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/pune</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/kolkata</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/chennai</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/ahmedabad</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/jaipur</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/lucknow</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/surat</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://devsecit.com/cities/kochi</loc>
-    <lastmod>2025-11-23</lastmod>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- City Pages - North Bengal Region -->
+  <url>
+    <loc>https://devsecit.com/cities/siliguri</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/darjeeling</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/jalpaiguri</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/coochbehar</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/raiganj</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/kaliyaganj</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/hemtabad</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/islampur</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/chopra</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/tungidighi</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/kanki</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/kishanganj</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- City Pages - West Bengal Districts -->
+  <url>
+    <loc>https://devsecit.com/cities/malda</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/murshidabad</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/birbhum</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/rampurhat</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/labpur</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/shantiniketan</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/purba-medinipur</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/pashchim-medinipur</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/purulia</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/jhargram</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- City Pages - Northeast & Neighboring States -->
+  <url>
+    <loc>https://devsecit.com/cities/sikkim</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/odisha</loc>
+    <lastmod>2025-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://devsecit.com/cities/jharkhand</loc>
+    <lastmod>2025-12-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
