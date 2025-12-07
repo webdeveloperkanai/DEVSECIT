@@ -410,15 +410,12 @@ const Home: NextPage = () => {
 
                 {/* Card Content */}
                 <div className={`relative h-full rounded-2xl overflow-hidden ${plan.highlight
-                    ? 'dark:bg-dark-800 light:bg-white'
-                    : 'dark:bg-dark-900 light:bg-white border dark:border-dark-700 light:border-gray-200'
+                  ? 'dark:bg-dark-800 light:bg-white'
+                  : 'dark:bg-dark-900 light:bg-white border dark:border-dark-700 light:border-gray-200'
                   }`}>
 
                   {/* Header */}
-                  <div className={`p-8 text-center ${plan.highlight
-                      ? 'bg-gradient-to-br from-primary-600/20 via-blue-600/20 to-purple-600/20 dark:border-b dark:border-primary-500/30'
-                      : ''
-                    }`}>
+                  <div className="p-8 text-center">
                     {/* Icon */}
                     <div className={`w-20 h-20 mx-auto rounded-2xl flex items-center justify-center mb-6 ${plan.highlight
                       ? 'bg-gradient-to-br from-primary-500 to-blue-600 shadow-lg shadow-primary-500/50'
