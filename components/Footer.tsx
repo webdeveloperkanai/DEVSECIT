@@ -1,15 +1,15 @@
 import Link from 'next/link';
-import { MapPin, Phone, Mail, MessageCircle, Linkedin, Twitter, Github, Youtube, Building2, Users, Briefcase, GraduationCap, Code, Brain } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageCircle, Linkedin, Twitter, Github, Building2, Briefcase, Facebook, Instagram, Package } from 'lucide-react';
 
 export const Footer = () => {
   const currentYear = 2025;
 
   const majorCities = [
-    'Mumbai', 'Delhi', 'Bangalore', 'Hyderabad', 'Chennai', 'Kolkata', 
+    'Mumbai', 'Delhi', 'Bangalore', 'Hyderabad', 'Chennai', 'Kolkata',
     'Pune', 'Ahmedabad', 'Jaipur', 'Lucknow', 'Chandigarh', 'Noida',
     'Gurgaon', 'Indore', 'Bhopal', 'Nagpur', 'Kochi', 'Coimbatore'
   ];
-  
+
   return (
     <footer className="dark:bg-dark-800 light:bg-gray-50 border-t dark:border-dark-700 light:border-gray-200 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -23,18 +23,24 @@ export const Footer = () => {
             <p className="dark:text-gray-400 light:text-gray-600 text-sm mb-4">
               Top Job Provider | Best CTC up to 36 LPA | 500+ Projects Delivered
             </p>
-            <div className="flex gap-4 mt-4">
-              <a href="#" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition">
+            <div className="flex gap-4 mt-4 flex-wrap">
+              <a href="https://in.linkedin.com/company/devsecit" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition" aria-label="LinkedIn">
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition">
-                <Twitter className="w-5 h-5" />
+              <a href="https://www.facebook.com/devsecitltd/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition" aria-label="Facebook">
+                <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition">
+              <a href="https://github.com/dev-sec-it" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition" aria-label="GitHub">
                 <Github className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition">
-                <Youtube className="w-5 h-5" />
+              <a href="https://x.com/devsecit" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition" aria-label="X (Twitter)">
+                <Twitter className="w-5 h-5" />
+              </a>
+              <a href="https://www.instagram.com/devsecit/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition" aria-label="Instagram">
+                <Instagram className="w-5 h-5" />
+              </a>
+              <a href="https://pub.dev/packages/hello_devsecit" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full dark:bg-dark-700 light:bg-gray-200 flex items-center justify-center dark:text-gray-400 light:text-gray-600 hover:text-primary-400 transition" aria-label="Pub.dev">
+                <Package className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -127,8 +133,8 @@ export const Footer = () => {
           </h4>
           <div className="flex flex-wrap gap-2">
             {majorCities.map((city, i) => (
-              <Link 
-                key={i} 
+              <Link
+                key={i}
                 href={`/cities/${city.toLowerCase()}`}
                 className="px-3 py-1 text-xs dark:bg-dark-700 light:bg-gray-200 rounded-full dark:text-gray-400 light:text-gray-600 hover:text-primary-400 hover:bg-primary-500/10 transition"
               >

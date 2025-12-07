@@ -60,178 +60,242 @@ const ServicesPage: NextPage = () => {
       <Header activePage="services" />
 
       {isClient && (
-      <>
-      {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 text-center dark:bg-gradient-to-b dark:from-dark-800 dark:to-dark-900 light:bg-gradient-to-b light:from-gray-50 light:to-white">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6 dark:text-white light:text-gray-900">
-            Comprehensive <span className="text-gradient">IT Services</span>
-          </h1>
-          <p className="text-xl md:text-2xl dark:text-gray-300 light:text-gray-600 mb-8">
-            End-to-end technology solutions tailored to your unique requirements
-          </p>
-        </div>
-      </section>
-
-      {/* Main Services (from homepage) */}
-      <section id="services" className="py-20 dark:bg-dark-800/50 light:bg-gray-50 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 dark:text-white light:text-gray-900">
-              Our <span className="text-gradient">Core Services</span>
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                Icon: Rocket,
-                title: 'Custom Software Development',
-                description: 'Bespoke applications for individuals, startups, and enterprises. Full-stack development with modern frameworks and scalable architecture.',
-                features: ['Web & Mobile Apps', 'SaaS Platforms', 'Enterprise Solutions', 'Legacy Modernization']
-              },
-              {
-                Icon: Shield,
-                title: 'Cybersecurity Integration',
-                description: 'Security-first development approach. Protect your digital assets with enterprise-grade security measures built into every layer.',
-                features: ['Secure-by-Design', 'Penetration Testing', 'Compliance (GDPR, SOC 2)', 'Security Audits']
-              },
-              {
-                Icon: Bot,
-                title: 'AI & Automation',
-                description: 'Harness the power of artificial intelligence and machine learning to automate processes and gain competitive advantages.',
-                features: ['Machine Learning', 'Process Automation', 'Intelligent Analytics', 'AI Integration']
-              },
-              {
-                Icon: Zap,
-                title: 'Custom API Development',
-                description: 'Build any API you need, no matter how specialized. 7-day MVP delivery for rapid prototyping and market validation.',
-                features: ['RESTful APIs', 'GraphQL', 'Microservices', 'Real-time APIs']
-              },
-              {
-                Icon: Target,
-                title: 'Full Project Outsourcing',
-                description: 'Hand over your entire project to our expert team. From planning to deployment, we handle everything while you focus on your business.',
-                features: ['End-to-End Delivery', 'Agile Development', 'DevOps & CI/CD', 'Maintenance & Support']
-              },
-              {
-                Icon: Lightbulb,
-                title: 'Digital Transformation',
-                description: 'Modernize your business with cutting-edge technology. Cloud migration, digital solutions, and strategic IT consulting.',
-                features: ['Cloud Solutions', 'System Integration', 'IT Strategy', 'Performance Optimization']
-              }
-            ].map((service, i) => (
-              <div key={i} className="dark:bg-dark-900 light:bg-white p-8 rounded-2xl dark:border dark:border-dark-700 light:border light:border-gray-200 hover:dark:border-primary-500/50 transition-all group">
-                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary-500/20 to-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <service.Icon className="w-8 h-8 text-primary-400" />
-                </div>
-                <h3 className="text-2xl font-bold mb-3 dark:text-white light:text-gray-900">{service.title}</h3>
-                <p className="dark:text-gray-400 light:text-gray-600 mb-4">{service.description}</p>
-                <ul className="space-y-2">
-                  {service.features.map((feature, j) => (
-                    <li key={j} className="flex items-center gap-2 dark:text-gray-300 light:text-gray-700">
-                      <Check className="w-4 h-4 text-primary-400 flex-shrink-0" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Technology Stack (from homepage) */}
-      <section id="techstack" className="py-20 dark:bg-dark-900 light:bg-white transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 dark:text-white light:text-gray-900">
-              Our <span className="text-gradient">Technology Stack</span>
-            </h2>
-          </div>
-          <div className="grid gap-8">
-            {[
-              { title: 'Frontend Development', techs: [{ name: 'React', icon: '⚛️' }, { name: 'Next.js', icon: '▲' }, { name: 'Vue.js', icon: '💚' }, { name: 'Angular', icon: '🅰️' }, { name: 'TypeScript', icon: '📘' }, { name: 'Tailwind CSS', icon: '🎨' }] },
-              { title: 'Backend Development', techs: [{ name: 'Node.js', icon: '🟢' }, { name: 'Python', icon: '🐍' }, { name: 'Go', icon: '🔷' }, { name: 'Rust', icon: '⚙️' }, { name: 'Java', icon: '☕' }, { name: 'PHP', icon: '🐘' }] },
-              { title: 'Database & Storage', techs: [{ name: 'PostgreSQL', icon: '🐘' }, { name: 'MongoDB', icon: '🍃' }, { name: 'Redis', icon: '🔴' }, { name: 'MySQL', icon: '🐬' }, { name: 'Firebase', icon: '🔥' }, { name: 'DynamoDB', icon: '⚡' }] },
-              { title: 'Cloud & DevOps', techs: [{ name: 'AWS', icon: '☁️' }, { name: 'Azure', icon: '🌐' }, { name: 'GCP', icon: '🔵' }, { name: 'Docker', icon: '🐳' }, { name: 'Kubernetes', icon: '⚓' }, { name: 'CI/CD', icon: '🔄' }] },
-              { title: 'Mobile Development', techs: [{ name: 'React Native', icon: '📱' }, { name: 'Flutter', icon: '🦋' }, { name: 'Swift', icon: '🍎' }, { name: 'Kotlin', icon: '🤖' }, { name: 'Ionic', icon: '⚡' }, { name: 'Xamarin', icon: '🔷' }] },
-              { title: 'AI & Machine Learning', techs: [{ name: 'TensorFlow', icon: '🧠' }, { name: 'PyTorch', icon: '🔥' }, { name: 'OpenAI', icon: '🤖' }, { name: 'Scikit-learn', icon: '📊' }, { name: 'Hugging Face', icon: '🤗' }, { name: 'LangChain', icon: '🔗' }] }
-            ].map((category, idx) => (
-              <div key={idx} className="dark:bg-dark-800 light:bg-gray-50 p-8 rounded-2xl border dark:border-dark-700 light:border-gray-200">
-                <h3 className="text-2xl font-bold mb-6 text-primary-400">{category.title}</h3>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                  {category.techs.map((tech, i) => (
-                    <div key={i} className="dark:bg-dark-900 light:bg-white p-4 rounded-lg text-center hover:dark:border-primary-500/50 border dark:border-dark-700 light:border-gray-200 transition-all">
-                      <div className="text-3xl mb-2">{tech.icon}</div>
-                      <div className="text-sm dark:text-gray-300 light:text-gray-700">{tech.name}</div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Capabilities Section (from homepage) */}
-      <section id="capabilities" className="py-20 dark:bg-dark-800/50 light:bg-gray-50 transition-colors">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 dark:text-white light:text-gray-900">
-              Elite <span className="text-gradient">Capabilities</span>
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { metric: '500+', highlight: 'Projects Delivered', description: 'Successful projects delivered to clients worldwide' },
-              { metric: '99.9%', highlight: 'Uptime SLA', description: 'Reliable infrastructure ensuring maximum availability' },
-              { metric: '7 Days', highlight: 'API MVP Delivery', description: 'Rapid prototyping and market validation' }
-            ].map((cap, i) => (
-              <div key={i} className="dark:bg-dark-900 light:bg-white p-8 rounded-2xl dark:border dark:border-dark-700 light:border light:border-gray-200">
-                <div className="text-5xl font-bold text-gradient mb-2">{cap.metric}</div>
-                <div className="text-primary-400 font-semibold mb-4">{cap.highlight}</div>
-                <p className="dark:text-gray-400 light:text-gray-600">{cap.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Project Submission Section */}
-      <section className="py-20 dark:bg-dark-900 light:bg-white transition-colors">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          {showProjectForm ? (
-            <>
-              <button
-                onClick={() => setShowProjectForm(false)}
-                className="mb-6 flex items-center gap-2 dark:text-gray-400 light:text-gray-600 hover:text-primary-400"
-              >
-                ← Back to Services
-              </button>
-              <ProjectSubmissionForm onClose={() => setShowProjectForm(false)} />
-            </>
-          ) : (
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 dark:text-white light:text-gray-900">
-                Ready to Start Your <span className="text-gradient">Project?</span>
-              </h2>
-              <p className="text-xl dark:text-gray-400 light:text-gray-600 mb-8">
-                Tell us about your requirements and we&apos;ll provide a detailed proposal with timeline and cost
-              </p>
-              <button
-                onClick={() => setShowProjectForm(true)}
-                className="px-10 py-4 bg-gradient-to-r from-primary-500 to-blue-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-primary-500/50 transition-all text-lg"
-              >
-                Submit Your Project Requirements
-              </button>
-              <p className="text-sm dark:text-gray-500 light:text-gray-500 mt-4">
-                Free consultation • Quick response within 24 hours • No obligations
+        <>
+          {/* Hero Section */}
+          <section className="pt-32 pb-20 px-4 text-center dark:bg-gradient-to-b dark:from-dark-800 dark:to-dark-900 light:bg-gradient-to-b light:from-gray-50 light:to-white">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-5xl md:text-6xl font-display font-bold mb-6 dark:text-white light:text-gray-900">
+                Comprehensive <span className="text-gradient">IT Services</span>
+              </h1>
+              <p className="text-xl md:text-2xl dark:text-gray-300 light:text-gray-600 mb-8">
+                End-to-end technology solutions tailored to your unique requirements
               </p>
             </div>
-          )}
-        </div>
-      </section>
-      </>
+          </section>
+
+          {/* Main Services (from homepage) */}
+          <section id="services" className="py-20 dark:bg-dark-800/50 light:bg-gray-50 transition-colors">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 dark:text-white light:text-gray-900">
+                  Our <span className="text-gradient">Core Services</span>
+                </h2>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {[
+                  {
+                    Icon: Rocket,
+                    title: 'Custom Software Development',
+                    description: 'Bespoke applications for individuals, startups, and enterprises. Full-stack development with modern frameworks and scalable architecture.',
+                    features: ['Web & Mobile Apps', 'SaaS Platforms', 'Enterprise Solutions', 'Legacy Modernization']
+                  },
+                  {
+                    Icon: Shield,
+                    title: 'Cybersecurity Integration',
+                    description: 'Security-first development approach. Protect your digital assets with enterprise-grade security measures built into every layer.',
+                    features: ['Secure-by-Design', 'Penetration Testing', 'Compliance (GDPR, SOC 2)', 'Security Audits']
+                  },
+                  {
+                    Icon: Bot,
+                    title: 'AI & Automation',
+                    description: 'Harness the power of artificial intelligence and machine learning to automate processes and gain competitive advantages.',
+                    features: ['Machine Learning', 'Process Automation', 'Intelligent Analytics', 'AI Integration']
+                  },
+                  {
+                    Icon: Zap,
+                    title: 'Custom API Development',
+                    description: 'Build any API you need, no matter how specialized. 7-day MVP delivery for rapid prototyping and market validation.',
+                    features: ['RESTful APIs', 'GraphQL', 'Microservices', 'Real-time APIs']
+                  },
+                  {
+                    Icon: Target,
+                    title: 'Full Project Outsourcing',
+                    description: 'Hand over your entire project to our expert team. From planning to deployment, we handle everything while you focus on your business.',
+                    features: ['End-to-End Delivery', 'Agile Development', 'DevOps & CI/CD', 'Maintenance & Support']
+                  },
+                  {
+                    Icon: Lightbulb,
+                    title: 'Digital Transformation',
+                    description: 'Modernize your business with cutting-edge technology. Cloud migration, digital solutions, and strategic IT consulting.',
+                    features: ['Cloud Solutions', 'System Integration', 'IT Strategy', 'Performance Optimization']
+                  }
+                ].map((service, i) => (
+                  <div key={i} className="dark:bg-dark-900 light:bg-white p-8 rounded-2xl dark:border dark:border-dark-700 light:border light:border-gray-200 hover:dark:border-primary-500/50 transition-all group">
+                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary-500/20 to-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                      <service.Icon className="w-8 h-8 text-primary-400" />
+                    </div>
+                    <h3 className="text-2xl font-bold mb-3 dark:text-white light:text-gray-900">{service.title}</h3>
+                    <p className="dark:text-gray-400 light:text-gray-600 mb-4">{service.description}</p>
+                    <ul className="space-y-2">
+                      {service.features.map((feature, j) => (
+                        <li key={j} className="flex items-center gap-2 dark:text-gray-300 light:text-gray-700">
+                          <Check className="w-4 h-4 text-primary-400 flex-shrink-0" />
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Technology Stack (from homepage) */}
+          <section id="techstack" className="py-20 dark:bg-dark-900 light:bg-white transition-colors">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 dark:text-white light:text-gray-900">
+                  Our <span className="text-gradient">Technology Stack</span>
+                </h2>
+              </div>
+              <div className="grid gap-8">
+                {[
+                  {
+                    title: 'Frontend Development',
+                    techs: [
+                      { name: 'React', slug: 'react', color: '#61DAFB' },
+                      { name: 'Next.js', slug: 'nextdotjs', color: '#000000' },
+                      { name: 'Vue.js', slug: 'vuedotjs', color: '#4FC08D' },
+                      { name: 'Angular', slug: 'angular', color: '#DD0031' },
+                      { name: 'TypeScript', slug: 'typescript', color: '#3178C6' },
+                      { name: 'Tailwind CSS', slug: 'tailwindcss', color: '#06B6D4' }
+                    ]
+                  },
+                  {
+                    title: 'Backend Development',
+                    techs: [
+                      { name: 'Node.js', slug: 'nodedotjs', color: '#339933' },
+                      { name: 'Python', slug: 'python', color: '#3776AB' },
+                      { name: 'Go', slug: 'go', color: '#00ADD8' },
+                      { name: 'Rust', slug: 'rust', color: '#000000' },
+                      { name: 'Java', slug: 'openjdk', color: '#000000' },
+                      { name: 'PHP', slug: 'php', color: '#777BB4' }
+                    ]
+                  },
+                  {
+                    title: 'Database & Storage',
+                    techs: [
+                      { name: 'PostgreSQL', slug: 'postgresql', color: '#4169E1' },
+                      { name: 'MongoDB', slug: 'mongodb', color: '#47A248' },
+                      { name: 'Redis', slug: 'redis', color: '#DC382D' },
+                      { name: 'MySQL', slug: 'mysql', color: '#4479A1' },
+                      { name: 'Firebase', slug: 'firebase', color: '#FFCA28' },
+                      { name: 'DynamoDB', slug: 'amazondynamodb', color: '#4053D6' }
+                    ]
+                  },
+                  {
+                    title: 'Cloud & DevOps',
+                    techs: [
+                      { name: 'AWS', slug: 'amazonaws', color: '#232F3E' },
+                      { name: 'Azure', slug: 'microsoftazure', color: '#0078D4' },
+                      { name: 'GCP', slug: 'googlecloud', color: '#4285F4' },
+                      { name: 'Docker', slug: 'docker', color: '#2496ED' },
+                      { name: 'Kubernetes', slug: 'kubernetes', color: '#326CE5' },
+                      { name: 'CI/CD', slug: 'githubactions', color: '#2088FF' }
+                    ]
+                  },
+                  {
+                    title: 'Mobile Development',
+                    techs: [
+                      { name: 'React Native', slug: 'react', color: '#61DAFB' },
+                      { name: 'Flutter', slug: 'flutter', color: '#02569B' },
+                      { name: 'Swift', slug: 'swift', color: '#F05138' },
+                      { name: 'Kotlin', slug: 'kotlin', color: '#7F52FF' },
+                      { name: 'Ionic', slug: 'ionic', color: '#3880FF' },
+                      { name: 'Xamarin', slug: 'xamarin', color: '#3498DB' }
+                    ]
+                  },
+                  {
+                    title: 'AI & Machine Learning',
+                    techs: [
+                      { name: 'TensorFlow', slug: 'tensorflow', color: '#FF6F00' },
+                      { name: 'PyTorch', slug: 'pytorch', color: '#EE4C2C' },
+                      { name: 'OpenAI', slug: 'openai', color: '#412991' },
+                      { name: 'Scikit-learn', slug: 'scikitlearn', color: '#F7931E' },
+                      { name: 'Hugging Face', slug: 'huggingface', color: '#FFD21E' },
+                      { name: 'LangChain', slug: 'langchain', color: '#1C3C3C' }
+                    ]
+                  }
+                ].map((category, idx) => (
+                  <div key={idx} className="dark:bg-dark-800 light:bg-gray-50 p-8 rounded-2xl border dark:border-dark-700 light:border-gray-200">
+                    <h3 className="text-2xl font-bold mb-6 text-primary-400">{category.title}</h3>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                      {category.techs.map((tech, i) => (
+                        <div key={i} className="dark:bg-dark-900 light:bg-white p-4 rounded-lg text-center hover:dark:border-primary-500/50 border dark:border-dark-700 light:border-gray-200 transition-all flex flex-col items-center justify-center gap-3 h-32">
+                          <img
+                            src={`https://cdn.simpleicons.org/${tech.slug}/${tech.color.replace('#', '')}`}
+                            alt={`${tech.name} icon`}
+                            className="w-10 h-10 object-contain dark:invert-0"
+                          />
+                          <div className="text-sm font-medium dark:text-gray-300 light:text-gray-700">{tech.name}</div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Capabilities Section (from homepage) */}
+          <section id="capabilities" className="py-20 dark:bg-dark-800/50 light:bg-gray-50 transition-colors">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 dark:text-white light:text-gray-900">
+                  Elite <span className="text-gradient">Capabilities</span>
+                </h2>
+              </div>
+              <div className="grid md:grid-cols-3 gap-8">
+                {[
+                  { metric: '500+', highlight: 'Projects Delivered', description: 'Successful projects delivered to clients worldwide' },
+                  { metric: '99.9%', highlight: 'Uptime SLA', description: 'Reliable infrastructure ensuring maximum availability' },
+                  { metric: '7 Days', highlight: 'API MVP Delivery', description: 'Rapid prototyping and market validation' }
+                ].map((cap, i) => (
+                  <div key={i} className="dark:bg-dark-900 light:bg-white p-8 rounded-2xl dark:border dark:border-dark-700 light:border light:border-gray-200">
+                    <div className="text-5xl font-bold text-gradient mb-2">{cap.metric}</div>
+                    <div className="text-primary-400 font-semibold mb-4">{cap.highlight}</div>
+                    <p className="dark:text-gray-400 light:text-gray-600">{cap.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+
+          {/* Project Submission Section */}
+          <section className="py-20 dark:bg-dark-900 light:bg-white transition-colors">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+              {showProjectForm ? (
+                <>
+                  <button
+                    onClick={() => setShowProjectForm(false)}
+                    className="mb-6 flex items-center gap-2 dark:text-gray-400 light:text-gray-600 hover:text-primary-400"
+                  >
+                    ← Back to Services
+                  </button>
+                  <ProjectSubmissionForm onClose={() => setShowProjectForm(false)} />
+                </>
+              ) : (
+                <div className="text-center mb-12">
+                  <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 dark:text-white light:text-gray-900">
+                    Ready to Start Your <span className="text-gradient">Project?</span>
+                  </h2>
+                  <p className="text-xl dark:text-gray-400 light:text-gray-600 mb-8">
+                    Tell us about your requirements and we&apos;ll provide a detailed proposal with timeline and cost
+                  </p>
+                  <button
+                    onClick={() => setShowProjectForm(true)}
+                    className="px-10 py-4 bg-gradient-to-r from-primary-500 to-blue-600 text-white font-bold rounded-lg hover:shadow-lg hover:shadow-primary-500/50 transition-all text-lg"
+                  >
+                    Submit Your Project Requirements
+                  </button>
+                  <p className="text-sm dark:text-gray-500 light:text-gray-500 mt-4">
+                    Free consultation • Quick response within 24 hours • No obligations
+                  </p>
+                </div>
+              )}
+            </div>
+          </section>
+        </>
       )}
 
       <Footer />
