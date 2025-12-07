@@ -240,20 +240,20 @@ const Home: NextPage = () => {
             {/* Carousel Track */}
             <div className="overflow-hidden mx-8 md:mx-16">
               <div
-                className="flex transition-transform duration-500 ease-out"
-                style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+                className="flex transition-transform duration-500 ease-out gap-4 md:gap-6"
+                style={{ transform: `translateX(-${currentSlide * (100 / 3)}%)` }}
               >
                 {featuredCourses.map((course, i) => (
-                  <div key={i} className="w-full flex-shrink-0 px-2">
+                  <div key={i} className="w-full md:w-1/2 lg:w-1/3 flex-shrink-0">
                     {/* Premium Card with Gradient Border */}
-                    <div className="relative group">
+                    <div className="relative group h-full">
                       {/* Gradient Border Effect */}
                       <div className="absolute -inset-0.5 bg-gradient-to-r from-primary-500 via-blue-500 to-purple-600 rounded-2xl opacity-75 group-hover:opacity-100 blur transition duration-300"></div>
 
                       {/* Card Content */}
-                      <div className="relative dark:bg-dark-900/95 light:bg-white/95 backdrop-blur-xl rounded-2xl overflow-hidden">
+                      <div className="relative h-full dark:bg-dark-900 light:bg-white backdrop-blur-xl rounded-2xl overflow-hidden">
                         {/* Image Section */}
-                        <div className="relative h-48 md:h-64 overflow-hidden">
+                        <div className="relative h-40 md:h-48 overflow-hidden">
                           <img
                             src={course.image}
                             alt={course.title}
@@ -262,49 +262,47 @@ const Home: NextPage = () => {
                           {/* Gradient Overlay */}
                           <div className="absolute inset-0 bg-gradient-to-t from-dark-900/90 via-dark-900/50 to-transparent"></div>
                           {/* Icon Badge */}
-                          <div className="absolute top-4 right-4 w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500/90 to-blue-600/90 backdrop-blur flex items-center justify-center">
-                            <course.Icon className="w-6 h-6 text-white" />
+                          <div className="absolute top-3 right-3 w-10 h-10 rounded-xl bg-gradient-to-br from-primary-500/90 to-blue-600/90 backdrop-blur flex items-center justify-center">
+                            <course.Icon className="w-5 h-5 text-white" />
                           </div>
                           {/* Price Badge */}
-                          <div className="absolute bottom-4 left-4">
-                            <span className="px-4 py-2 rounded-full bg-gradient-to-r from-primary-500 to-blue-600 text-white font-bold text-lg">
+                          <div className="absolute bottom-3 left-3">
+                            <span className="px-3 py-1.5 rounded-full bg-gradient-to-r from-primary-500 to-blue-600 text-white font-bold text-sm">
                               {course.price}
                             </span>
                           </div>
                         </div>
 
                         {/* Content Section */}
-                        <div className="p-6 md:p-8">
-                          <h3 className="text-xl md:text-2xl font-bold mb-3 dark:text-white light:text-gray-900">
+                        <div className="p-4 md:p-5">
+                          <h3 className="text-lg font-bold mb-2 dark:text-white light:text-gray-900 line-clamp-1">
                             {course.title}
                           </h3>
-                          <p className="dark:text-gray-400 light:text-gray-600 mb-6 text-sm md:text-base">
+                          <p className="dark:text-gray-400 light:text-gray-600 mb-4 text-sm line-clamp-2">
                             {course.description}
                           </p>
 
-                          {/* Highlights */}
-                          <div className="grid grid-cols-2 gap-3 mb-6">
-                            {course.highlights.map((highlight, j) => (
-                              <div key={j} className="flex items-center gap-2 text-sm">
-                                <div className="w-5 h-5 rounded-full bg-gradient-to-r from-primary-500/20 to-blue-500/20 flex items-center justify-center">
-                                  <Check className="w-3 h-3 text-primary-400" />
-                                </div>
-                                <span className="dark:text-gray-300 light:text-gray-700">{highlight}</span>
+                          {/* Highlights - Compact */}
+                          <div className="grid grid-cols-2 gap-2 mb-4">
+                            {course.highlights.slice(0, 4).map((highlight, j) => (
+                              <div key={j} className="flex items-center gap-1.5 text-xs">
+                                <Check className="w-3 h-3 text-primary-400 flex-shrink-0" />
+                                <span className="dark:text-gray-300 light:text-gray-700 truncate">{highlight}</span>
                               </div>
                             ))}
                           </div>
 
                           {/* Footer */}
-                          <div className="flex items-center justify-between pt-4 border-t dark:border-dark-700 light:border-gray-200">
-                            <div className="flex items-center gap-2 text-sm dark:text-gray-400 light:text-gray-600">
-                              <Clock className="w-4 h-4" />
+                          <div className="flex items-center justify-between pt-3 border-t dark:border-dark-700 light:border-gray-200">
+                            <div className="flex items-center gap-1.5 text-xs dark:text-gray-400 light:text-gray-600">
+                              <Clock className="w-3.5 h-3.5" />
                               <span>{course.duration}</span>
                             </div>
                             <Link
                               href={`/courses/${course.slug}`}
-                              className="px-6 py-2 bg-gradient-to-r from-primary-500 to-blue-600 text-white font-semibold rounded-lg hover:shadow-lg hover:shadow-primary-500/50 transition-all hover:scale-105"
+                              className="px-4 py-1.5 bg-gradient-to-r from-primary-500 to-blue-600 text-white font-semibold rounded-lg text-sm hover:shadow-lg hover:shadow-primary-500/50 transition-all hover:scale-105"
                             >
-                              Enroll Now →
+                              Enroll →
                             </Link>
                           </div>
                         </div>
@@ -406,25 +404,25 @@ const Home: NextPage = () => {
 
                 {/* Gradient Border Effect */}
                 <div className={`absolute -inset-0.5 rounded-2xl transition duration-300 ${plan.highlight
-                    ? 'bg-gradient-to-r from-primary-500 via-blue-500 to-purple-600 opacity-100'
-                    : 'bg-gradient-to-r from-primary-500/50 to-blue-500/50 opacity-0 group-hover:opacity-75'
+                  ? 'bg-gradient-to-r from-primary-500 via-blue-500 to-purple-600 opacity-100'
+                  : 'bg-gradient-to-r from-primary-500/50 to-blue-500/50 opacity-0 group-hover:opacity-75'
                   } blur`}></div>
 
                 {/* Card Content */}
                 <div className={`relative h-full rounded-2xl overflow-hidden ${plan.highlight
-                    ? 'dark:bg-dark-900/95 light:bg-white/95 backdrop-blur-xl'
+                    ? 'dark:bg-dark-800 light:bg-white'
                     : 'dark:bg-dark-900 light:bg-white border dark:border-dark-700 light:border-gray-200'
                   }`}>
 
                   {/* Header */}
                   <div className={`p-8 text-center ${plan.highlight
-                      ? 'bg-gradient-to-br from-primary-500/10 via-blue-500/10 to-purple-500/10'
+                      ? 'bg-gradient-to-br from-primary-600/20 via-blue-600/20 to-purple-600/20 dark:border-b dark:border-primary-500/30'
                       : ''
                     }`}>
                     {/* Icon */}
                     <div className={`w-20 h-20 mx-auto rounded-2xl flex items-center justify-center mb-6 ${plan.highlight
-                        ? 'bg-gradient-to-br from-primary-500 to-blue-600 shadow-lg shadow-primary-500/50'
-                        : 'bg-gradient-to-br from-primary-500/20 to-blue-500/20'
+                      ? 'bg-gradient-to-br from-primary-500 to-blue-600 shadow-lg shadow-primary-500/50'
+                      : 'bg-gradient-to-br from-primary-500/20 to-blue-500/20'
                       } group-hover:scale-110 transition-transform duration-300`}>
                       <plan.Icon className={`w-10 h-10 ${plan.highlight ? 'text-white' : 'text-primary-400'}`} />
                     </div>
@@ -455,8 +453,8 @@ const Home: NextPage = () => {
                       {plan.features.map((feature, j) => (
                         <li key={j} className="flex items-center gap-3">
                           <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 ${plan.highlight
-                              ? 'bg-gradient-to-r from-primary-500 to-blue-600'
-                              : 'bg-gradient-to-r from-primary-500/20 to-blue-500/20'
+                            ? 'bg-gradient-to-r from-primary-500 to-blue-600'
+                            : 'bg-gradient-to-r from-primary-500/20 to-blue-500/20'
                             }`}>
                             <Check className={`w-4 h-4 ${plan.highlight ? 'text-white' : 'text-primary-400'}`} />
                           </div>
@@ -469,8 +467,8 @@ const Home: NextPage = () => {
                     <Link
                       href="/pricing"
                       className={`block w-full py-4 rounded-xl font-bold text-center transition-all duration-300 ${plan.highlight
-                          ? 'bg-gradient-to-r from-primary-500 to-blue-600 text-white shadow-lg shadow-primary-500/50 hover:shadow-xl hover:shadow-primary-500/75 hover:scale-105'
-                          : 'border-2 dark:border-primary-500/50 light:border-primary-400 dark:text-white light:text-gray-900 hover:bg-gradient-to-r hover:from-primary-500 hover:to-blue-600 hover:text-white hover:border-transparent'
+                        ? 'bg-gradient-to-r from-primary-500 to-blue-600 text-white shadow-lg shadow-primary-500/50 hover:shadow-xl hover:shadow-primary-500/75 hover:scale-105'
+                        : 'border-2 dark:border-primary-500/50 light:border-primary-400 dark:text-white light:text-gray-900 hover:bg-gradient-to-r hover:from-primary-500 hover:to-blue-600 hover:text-white hover:border-transparent'
                         }`}
                     >
                       {plan.price === 'Custom' ? 'Contact Us' : 'Get Started'} →
