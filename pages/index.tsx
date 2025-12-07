@@ -409,10 +409,7 @@ const Home: NextPage = () => {
                   } blur`}></div>
 
                 {/* Card Content */}
-                <div className={`relative h-full rounded-2xl overflow-hidden ${plan.highlight
-                  ? 'dark:bg-dark-800 light:bg-white'
-                  : 'dark:bg-dark-900 light:bg-white border dark:border-dark-700 light:border-gray-200'
-                  }`}>
+                <div className="relative h-full rounded-2xl overflow-hidden dark:bg-dark-900 light:bg-white border dark:border-dark-700 light:border-gray-200">
 
                   {/* Header */}
                   <div className="p-8 text-center">
