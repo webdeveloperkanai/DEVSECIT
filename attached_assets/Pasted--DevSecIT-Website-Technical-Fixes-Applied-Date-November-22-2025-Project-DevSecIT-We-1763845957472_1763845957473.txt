@@ -1,7 +1,7 @@
-# DevSecIT Website - Technical Fixes Applied
+# DEV SEC IT Website - Technical Fixes Applied
 
 **Date**: November 22, 2025  
-**Project**: DevSecIT Website (Next.js 15 Pages Router)  
+**Project**: DEV SEC IT Website (Next.js 15 Pages Router)  
 **Status**: Production Ready
 
 ---

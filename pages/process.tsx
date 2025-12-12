@@ -8,7 +8,7 @@ const Process: NextPage = () => {
   const processSchema = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    name: 'DevSecIT Development Process',
+    name: 'DEV SEC IT Development Process',
     step: [
       {
         '@type': 'HowToStep',
@@ -91,9 +91,9 @@ const Process: NextPage = () => {
   return (
     <div className="min-h-screen dark:bg-dark-900 light:bg-white transition-colors duration-300">
       <Head>
-        <title>Our Development Process - DevSecIT | West Bengal, India</title>
-        <meta name="description" content="Learn about DevSecIT&apos;s proven development process: Discovery, Design, Development, Testing, Deployment, and 24/7 Support. From concept to production." />
-        <meta name="keywords" content="development process, software methodology, agile development, DevSecIT process, quality assurance" />
+        <title>Our Development Process - DEV SEC IT | West Bengal, India</title>
+        <meta name="description" content="Learn about DEV SEC IT&apos;s proven development process: Discovery, Design, Development, Testing, Deployment, and 24/7 Support. From concept to production." />
+        <meta name="keywords" content="development process, software methodology, agile development, DEV SEC IT process, quality assurance" />
         <link rel="canonical" href="https://devsecit.com/process" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(processSchema) }} />
       </Head>
@@ -101,7 +101,7 @@ const Process: NextPage = () => {
       <nav className="fixed top-0 w-full z-50 dark:bg-dark-900/95 light:bg-white/95 backdrop-blur-lg dark:border-dark-700 light:border-gray-200 border-b transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="text-2xl font-display font-bold text-gradient">DevSecIT</Link>
+            <Link href="/" className="text-2xl font-display font-bold text-gradient">DEV SEC IT</Link>
             <div className="flex items-center gap-4">
               <ThemeToggle />
               <Link href="/#contact" className="hidden sm:inline-block bg-gradient-to-r from-primary-500 to-blue-600 px-6 py-2 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary-500/50 transition-all text-white">

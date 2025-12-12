@@ -12,14 +12,14 @@ const VirtualCTO: NextPage = () => {
     description: 'Strategic technology leadership for startups and businesses with equity partnership model',
     provider: {
       '@type': 'Organization',
-      name: 'DevSecIT'
+      name: 'DEV SEC IT'
     }
   };
 
   return (
     <div className="min-h-screen dark:bg-dark-900 light:bg-white transition-colors duration-300">
       <Head>
-        <title>Virtual CTO Service - DevSecIT | Startup Technology Leadership</title>
+        <title>Virtual CTO Service - DEV SEC IT | Startup Technology Leadership</title>
         <meta name="description" content="Virtual CTO service with 10% equity stake. 90-day MVP guarantee, 100% legal agreements, strategic technology mentorship for startups." />
         <meta name="keywords" content="virtual CTO, startup founder, technical advisor, MVP development, equity partnership, technology leadership" />
         <link rel="canonical" href="https://devsecit.com/virtual-cto" />
@@ -29,7 +29,7 @@ const VirtualCTO: NextPage = () => {
       <nav className="fixed top-0 w-full z-50 dark:bg-dark-900/95 light:bg-white/95 backdrop-blur-lg dark:border-dark-700 light:border-gray-200 border-b transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="text-2xl font-display font-bold text-gradient">DevSecIT</Link>
+            <Link href="/" className="text-2xl font-display font-bold text-gradient">DEV SEC IT</Link>
             <div className="flex items-center gap-4">
               <ThemeToggle />
               <Link href="#contact" className="hidden sm:inline-block bg-gradient-to-r from-primary-500 to-blue-600 px-6 py-2 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary-500/50 transition-all text-white">

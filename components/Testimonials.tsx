@@ -60,7 +60,7 @@ const testimonials: Testimonial[] = [
     role: 'CEO & Founder',
     company: 'TechStart India',
     location: 'Mumbai',
-    feedback: 'DevSecIT transformed our startup vision into a working MVP in just 90 days. Their Virtual CTO service provided strategic guidance that accelerated our growth by 3x.',
+    feedback: 'DEV SEC IT transformed our startup vision into a working MVP in just 90 days. Their Virtual CTO service provided strategic guidance that accelerated our growth by 3x.',
     rating: 5,
     type: 'client'
   }
@@ -86,7 +86,7 @@ export const Testimonials = () => {
       },
       organizationReviewed: {
         '@type': 'Organization',
-        name: 'DevSecIT'
+        name: 'DEV SEC IT'
       }
     }))
   };

@@ -6,12 +6,12 @@ const Privacy: NextPage = () => {
   const privacySchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Privacy Policy - DevSecIT",
-    "description": "Privacy policy for DevSecIT software development company in West Bengal, India",
+    "name": "Privacy Policy - DEV SEC IT",
+    "description": "Privacy policy for DEV SEC IT software development company in West Bengal, India",
     "url": "https://devsecit.com/privacy",
     "isPartOf": {
       "@type": "Website",
-      "name": "DevSecIT",
+      "name": "DEV SEC IT",
       "url": "https://devsecit.com"
     }
   };
@@ -19,13 +19,13 @@ const Privacy: NextPage = () => {
   return (
     <div className="min-h-screen dark:bg-dark-900 light:bg-white transition-colors duration-300">
       <Head>
-        <title>Privacy Policy - DevSecIT | Software Development West Bengal</title>
-        <meta name="description" content="DevSecIT Privacy Policy - Data protection and privacy practices for software development services in West Bengal, India. Secure and compliant." />
+        <title>Privacy Policy - DEV SEC IT | Software Development West Bengal</title>
+        <meta name="description" content="DEV SEC IT Privacy Policy - Data protection and privacy practices for software development services in West Bengal, India. Secure and compliant." />
         <meta name="keywords" content="privacy policy, data protection, software company India, cybersecurity, GDPR, data privacy" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://devsecit.com/privacy" />
-        <meta property="og:title" content="Privacy Policy - DevSecIT" />
-        <meta property="og:description" content="How DevSecIT protects your data and privacy" />
+        <meta property="og:title" content="Privacy Policy - DEV SEC IT" />
+        <meta property="og:description" content="How DEV SEC IT protects your data and privacy" />
         <meta property="og:url" content="https://devsecit.com/privacy" />
         <script
           type="application/ld+json"
@@ -36,7 +36,7 @@ const Privacy: NextPage = () => {
       <nav className="fixed top-0 w-full z-50 dark:bg-dark-900/95 light:bg-white/95 backdrop-blur-lg dark:border-dark-700 light:border-gray-200 border-b transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="text-2xl font-display font-bold text-gradient">DevSecIT</Link>
+            <Link href="/" className="text-2xl font-display font-bold text-gradient">DEV SEC IT</Link>
             <Link href="/" className="text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-primary-400 transition-colors">← Back to Home</Link>
           </div>
         </div>
@@ -52,7 +52,7 @@ const Privacy: NextPage = () => {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">1. Introduction</h2>
             <p className="leading-relaxed">
-              At DevSecIT, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+              At DEV SEC IT, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
             </p>
           </section>
 

@@ -37,7 +37,7 @@ export const HostingPromoPopup = () => {
     setIsClosed(true);
   };
 
-  const whatsappLink = `https://wa.me/918101979855?text=Hi DevSecIT! I'm interested in developing my website with you and learning about the lifetime free hosting offer.`;
+  const whatsappLink = `https://wa.me/918101979855?text=Hi DEV SEC IT! I'm interested in developing my website with you and learning about the lifetime free hosting offer.`;
 
   if (!isVisible) return null;
 
@@ -71,7 +71,7 @@ export const HostingPromoPopup = () => {
                 Lifetime Free Hosting
               </h3>
               <p className="dark:text-gray-300 light:text-gray-600 transition-colors duration-300">
-                Develop your website with DevSecIT and get <strong>lifetime free hosting</strong> included!
+                Develop your website with DEV SEC IT and get <strong>lifetime free hosting</strong> included!
               </p>
             </div>
 

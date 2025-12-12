@@ -47,10 +47,10 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "DevSecIT Website"
+args = "DEV SEC IT Website"
 
 [[workflows.workflow]]
-name = "DevSecIT Website"
+name = "DEV SEC IT Website"
 author = "agent"
 
 [[workflows.workflow.tasks]]

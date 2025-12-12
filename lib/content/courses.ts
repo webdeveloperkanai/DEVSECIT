@@ -91,7 +91,7 @@ export const COURSES: Course[] = [
       'Collaborate using Git and GitHub'
     ],
     certifications: [
-      'DevSecIT Full-Stack Developer Certificate',
+      'DEV SEC IT Full-Stack Developer Certificate',
       'Project Completion Certificates (3 projects)',
       'LinkedIn-endorsed skills'
     ],
@@ -168,7 +168,7 @@ export const COURSES: Course[] = [
       'Understand cloud-native architectures'
     ],
     certifications: [
-      'DevSecIT DevSecOps Professional Certificate',
+      'DEV SEC IT DevSecOps Professional Certificate',
       'Kubernetes Fundamentals Badge',
       'Docker Certified Associate Preparation'
     ],
@@ -252,7 +252,7 @@ export const COURSES: Course[] = [
       'Prepare for CEH certification'
     ],
     certifications: [
-      'DevSecIT Certified Ethical Hacker',
+      'DEV SEC IT Certified Ethical Hacker',
       'Penetration Testing Certificate',
       'CEH Exam Preparation & Guidance'
     ],
@@ -330,7 +330,7 @@ export const COURSES: Course[] = [
       'Understand mobile app architecture'
     ],
     certifications: [
-      'DevSecIT Mobile App Developer Certificate',
+      'DEV SEC IT Mobile App Developer Certificate',
       'Flutter Development Certification',
       '3 Published App Certificates'
     ],
@@ -408,7 +408,7 @@ export const COURSES: Course[] = [
       'Understand multi-cloud strategies'
     ],
     certifications: [
-      'DevSecIT Cloud Computing Certificate',
+      'DEV SEC IT Cloud Computing Certificate',
       'AWS Solutions Architect Associate Prep',
       'Azure Fundamentals Prep'
     ],
@@ -492,7 +492,7 @@ export const COURSES: Course[] = [
       'Understand MLOps principles'
     ],
     certifications: [
-      'DevSecIT AI/ML Engineer Certificate',
+      'DEV SEC IT AI/ML Engineer Certificate',
       'TensorFlow Developer Certificate Prep',
       'AWS Machine Learning Specialty Prep'
     ],
@@ -570,7 +570,7 @@ export const COURSES: Course[] = [
       'Understand OWASP Top 10'
     ],
     certifications: [
-      'DevSecIT Secure Software Engineer Certificate',
+      'DEV SEC IT Secure Software Engineer Certificate',
       'OWASP Security Certification Prep'
     ],
     schedule: {
@@ -646,7 +646,7 @@ export const COURSES: Course[] = [
       'Understand distributed systems'
     ],
     certifications: [
-      'DevSecIT Advanced Backend Engineer Certificate',
+      'DEV SEC IT Advanced Backend Engineer Certificate',
       'Microservices Architecture Certification'
     ],
     schedule: {
@@ -729,7 +729,7 @@ export const COURSES: Course[] = [
       'Optimize data processing workflows'
     ],
     certifications: [
-      'DevSecIT Data Engineer Certificate',
+      'DEV SEC IT Data Engineer Certificate',
       'GCP Data Engineer Certification Prep',
       'AWS Big Data Specialty Prep'
     ],
@@ -807,7 +807,7 @@ export const COURSES: Course[] = [
       'Work as QA automation engineer'
     ],
     certifications: [
-      'DevSecIT QA Automation Engineer Certificate',
+      'DEV SEC IT QA Automation Engineer Certificate',
       'ISTQB Foundation Level Prep',
       'Selenium Certification'
     ],

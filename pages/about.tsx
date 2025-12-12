@@ -8,7 +8,7 @@ const About: NextPage = () => {
   const teamSchema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'DevSecIT',
+    name: 'DEV SEC IT',
     description: 'Leading software development and cybersecurity solutions company in India',
     url: 'https://devsecit.com',
     foundingDate: '2020',
@@ -21,8 +21,8 @@ const About: NextPage = () => {
   return (
     <div className="min-h-screen dark:bg-dark-900 light:bg-white transition-colors duration-300">
       <Head>
-        <title>About DevSecIT - Team & Company Mission | West Bengal, India</title>
-        <meta name="description" content="Meet the DevSecIT team. We&apos;re a group of elite developers, architects, and security experts building the future of Indian software technology." />
+        <title>About DEV SEC IT - Team & Company Mission | West Bengal, India</title>
+        <meta name="description" content="Meet the DEV SEC IT team. We&apos;re a group of elite developers, architects, and security experts building the future of Indian software technology." />
         <meta name="keywords" content="about devSecIT, team, company, founders, experts, software developers, cybersecurity, India" />
         <link rel="canonical" href="https://devsecit.com/about" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(teamSchema) }} />
@@ -31,7 +31,7 @@ const About: NextPage = () => {
       <nav className="fixed top-0 w-full z-50 dark:bg-dark-900/95 light:bg-white/95 backdrop-blur-lg dark:border-dark-700 light:border-gray-200 border-b transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="text-2xl font-display font-bold text-gradient dark:text-gradient light:text-gradient">DevSecIT</Link>
+            <Link href="/" className="text-2xl font-display font-bold text-gradient dark:text-gradient light:text-gradient">DEV SEC IT</Link>
             <div className="flex items-center gap-4">
               <ThemeToggle />
               <Link href="/#contact" className="hidden sm:inline-block bg-gradient-to-r from-primary-500 to-blue-600 px-6 py-2 rounded-lg font-semibold hover:shadow-lg hover:shadow-primary-500/50 transition-all text-white">
@@ -48,7 +48,7 @@ const About: NextPage = () => {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-7xl font-display font-bold mb-6 leading-tight dark:text-white light:text-gray-900 transition-colors duration-300">
-            Meet <span className="text-gradient">DevSecIT</span>
+            Meet <span className="text-gradient">DEV SEC IT</span>
           </h1>
           <p className="text-xl md:text-2xl dark:text-gray-400 light:text-gray-600 mb-8 max-w-3xl mx-auto transition-colors duration-300">
             We&apos;re a team of elite developers, architects, and security experts building the future of Indian software technology.
@@ -114,7 +114,7 @@ const About: NextPage = () => {
       <section className="py-20 dark:bg-dark-900 light:bg-white transition-colors duration-300">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-display font-bold mb-6 dark:text-white light:text-gray-900 transition-colors duration-300">
-            Why Choose <span className="text-gradient">DevSecIT?</span>
+            Why Choose <span className="text-gradient">DEV SEC IT?</span>
           </h2>
           <div className="grid md:grid-cols-2 gap-6 text-left">
             {[

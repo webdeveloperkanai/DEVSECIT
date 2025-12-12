@@ -36,7 +36,7 @@ export const SEOOptimized = ({
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
-      <meta property="og:site_name" content="DevSecIT" />
+      <meta property="og:site_name" content="DEV SEC IT" />
       
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />

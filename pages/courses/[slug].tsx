@@ -27,7 +27,7 @@ const CourseDetail: NextPage<CourseDetailProps> = ({ course }) => {
   return (
     <div suppressHydrationWarning className="min-h-screen dark:bg-dark-900 light:bg-white">
       <Head>
-        <title>{course.title} - DevSecIT Professional Training</title>
+        <title>{course.title} - DEV SEC IT Professional Training</title>
         <meta name="description" content={course.description} />
       </Head>
 
@@ -276,7 +276,7 @@ const CourseDetail: NextPage<CourseDetailProps> = ({ course }) => {
                       <div className="dark:bg-primary-900/20 light:bg-primary-50 p-8 rounded-2xl border dark:border-primary-700/50 light:border-primary-200">
                         <h3 className="text-xl font-bold mb-4 dark:text-white light:text-gray-900">Ready to Start Your Journey?</h3>
                         <p className="dark:text-gray-300 light:text-gray-700 mb-6">
-                          Join hundreds of successful graduates who transformed their careers with DevSecIT.
+                          Join hundreds of successful graduates who transformed their careers with DEV SEC IT.
                         </p>
                         <button
                           onClick={() => setShowAdmissionForm(true)}

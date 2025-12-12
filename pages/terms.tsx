@@ -6,12 +6,12 @@ const Terms: NextPage = () => {
   const termsSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Terms of Service - DevSecIT",
-    "description": "Terms of service for DevSecIT software development and API integration services",
+    "name": "Terms of Service - DEV SEC IT",
+    "description": "Terms of service for DEV SEC IT software development and API integration services",
     "url": "https://devsecit.com/terms",
     "isPartOf": {
       "@type": "Website",
-      "name": "DevSecIT",
+      "name": "DEV SEC IT",
       "url": "https://devsecit.com"
     }
   };
@@ -19,13 +19,13 @@ const Terms: NextPage = () => {
   return (
     <div className="min-h-screen dark:bg-dark-900 light:bg-white transition-colors duration-300">
       <Head>
-        <title>Terms of Service - DevSecIT | Custom Software Development</title>
-        <meta name="description" content="DevSecIT Terms of Service - Legal terms and conditions for custom software development, API integration, and cybersecurity services in West Bengal, India." />
+        <title>Terms of Service - DEV SEC IT | Custom Software Development</title>
+        <meta name="description" content="DEV SEC IT Terms of Service - Legal terms and conditions for custom software development, API integration, and cybersecurity services in West Bengal, India." />
         <meta name="keywords" content="terms of service, service agreement, software development terms, API integration terms, contract terms" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://devsecit.com/terms" />
-        <meta property="og:title" content="Terms of Service - DevSecIT" />
-        <meta property="og:description" content="Terms and conditions for DevSecIT services" />
+        <meta property="og:title" content="Terms of Service - DEV SEC IT" />
+        <meta property="og:description" content="Terms and conditions for DEV SEC IT services" />
         <meta property="og:url" content="https://devsecit.com/terms" />
         <script
           type="application/ld+json"
@@ -36,7 +36,7 @@ const Terms: NextPage = () => {
       <nav className="fixed top-0 w-full z-50 dark:bg-dark-900/95 light:bg-white/95 backdrop-blur-lg dark:border-dark-700 light:border-gray-200 border-b transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <Link href="/" className="text-2xl font-display font-bold text-gradient">DevSecIT</Link>
+            <Link href="/" className="text-2xl font-display font-bold text-gradient">DEV SEC IT</Link>
             <Link href="/" className="text-gray-300 dark:text-gray-300 light:text-gray-700 hover:text-primary-400 transition-colors">← Back to Home</Link>
           </div>
         </div>
@@ -52,13 +52,13 @@ const Terms: NextPage = () => {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">1. Agreement to Terms</h2>
             <p className="leading-relaxed">
-              By accessing or using DevSecIT&apos;s services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services.
+              By accessing or using DEV SEC IT&apos;s services, you agree to be bound by these Terms of Service. If you disagree with any part of these terms, you may not access our services.
             </p>
           </section>
 
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">2. Services Description</h2>
-            <p className="leading-relaxed mb-4">DevSecIT provides the following services:</p>
+            <p className="leading-relaxed mb-4">DEV SEC IT provides the following services:</p>
             <ul className="list-disc list-inside space-y-2 ml-4">
               <li>Custom software development</li>
               <li>Cybersecurity integration and consulting</li>
@@ -84,7 +84,7 @@ const Terms: NextPage = () => {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">4. Intellectual Property</h2>
             <p className="leading-relaxed">
-              All content, features, and functionality of our services are owned by DevSecIT and are protected by international copyright, trademark, and other intellectual property laws. Custom work created for clients will be transferred to the client upon full payment, unless otherwise agreed in writing.
+              All content, features, and functionality of our services are owned by DEV SEC IT and are protected by international copyright, trademark, and other intellectual property laws. Custom work created for clients will be transferred to the client upon full payment, unless otherwise agreed in writing.
             </p>
           </section>
 
@@ -116,7 +116,7 @@ const Terms: NextPage = () => {
           <section>
             <h2 className="text-2xl font-bold text-white mb-4">8. Limitation of Liability</h2>
             <p className="leading-relaxed">
-              To the maximum extent permitted by law, DevSecIT shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use our services.
+              To the maximum extent permitted by law, DEV SEC IT shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use or inability to use our services.
             </p>
           </section>
 

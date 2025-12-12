@@ -22,7 +22,7 @@ export const APIOrderModal = ({ service, onClose }: APIOrderModalProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
-    const message = `Hi DevSecIT! I'm interested in integrating *${service.name}* into my project.
+    const message = `Hi DEV SEC IT! I'm interested in integrating *${service.name}* into my project.
 
 *Details:*
 Name: ${orderData.name}

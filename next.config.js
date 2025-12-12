@@ -5,8 +5,11 @@ const nextConfig = {
   poweredByHeader: false,
   productionBrowserSourceMaps: false,
   
+  output: 'export',
+  
   // Image optimization for Core Web Vitals
   images: {
+    unoptimized: true,
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     domains: ['devsecit.com', 'images.unsplash.com', 'images.pexels.com'],
@@ -14,6 +17,8 @@ const nextConfig = {
   },
 
   // Headers for SEO, security, and performance
+  // Note: Headers are not supported in static exports
+  /*
   async headers() {
     return [
       {
@@ -73,8 +78,11 @@ const nextConfig = {
       }
     ]
   },
+  */
 
   // Redirects for SEO
+  // Note: Redirects are not supported in static exports
+  /*
   async redirects() {
     return [
       {
@@ -84,6 +92,7 @@ const nextConfig = {
       }
     ]
   }
+  */
 }
 
 if (process.env.REPLIT_DOMAINS) {

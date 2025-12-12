@@ -4,7 +4,7 @@ export const generateOrganizationSchema = () => {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "DevSecIT",
+    "name": "DEV SEC IT",
     "url": "https://devsecit.com",
     "logo": "https://devsecit.com/logo.png",
     "description": "Elite software development and cybersecurity solutions in West Bengal. Custom development, AI integration, rapid API creation in 7 days.",
@@ -40,7 +40,7 @@ export const generateLocalBusinessSchema = () => {
   return {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "DevSecIT - West Bengal IT Solutions",
+    "name": "DEV SEC IT - West Bengal IT Solutions",
     "image": "https://devsecit.com/logo.png",
     "description": "Premier software development and cybersecurity company serving West Bengal and India with custom solutions, API development, and AI integration.",
     "address": {
@@ -65,7 +65,7 @@ export const generateServiceSchema = (serviceName: string, description: string) 
     "description": description,
     "provider": {
       "@type": "Organization",
-      "name": "DevSecIT",
+      "name": "DEV SEC IT",
       "url": "https://devsecit.com"
     },
     "areaServed": ["West Bengal", "India", "Global"],
@@ -94,7 +94,7 @@ export const generateAggregateOfferSchema = () => {
     "@type": "AggregateOffer",
     "priceCurrency": "INR",
     "offerCount": "500+",
-    "name": "DevSecIT Services",
+    "name": "DEV SEC IT Services",
     "offers": [
       {
         "@type": "Offer",
@@ -157,11 +157,11 @@ export const generateArticleSchema = (title: string, description: string, publis
     "datePublished": publishDate,
     "author": {
       "@type": "Organization",
-      "name": "DevSecIT"
+      "name": "DEV SEC IT"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "DevSecIT",
+      "name": "DEV SEC IT",
       "logo": {
         "@type": "ImageObject",
         "url": "https://devsecit.com/logo.png"
@@ -185,7 +185,7 @@ export const generateWebsiteSchema = () => {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "DevSecIT",
+    "name": "DEV SEC IT",
     "url": "https://devsecit.com",
     "description": "Elite software development and cybersecurity solutions in West Bengal",
     "potentialAction": {
@@ -203,7 +203,7 @@ export const generateEducationalOrganizationSchema = () => {
   return {
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
-    "name": "DevSecIT Professional Training",
+    "name": "DEV SEC IT Professional Training",
     "url": "https://devsecit.com",
     "logo": "https://devsecit.com/logo.png",
     "description": "Professional IT training and certification programs in software development, cybersecurity, and cloud computing",
@@ -237,7 +237,7 @@ export const generateCourseSchema = (courseName: string, courseDescription: stri
     "description": courseDescription,
     "provider": {
       "@type": "Organization",
-      "name": "DevSecIT",
+      "name": "DEV SEC IT",
       "url": "https://devsecit.com"
     },
     "duration": duration,
@@ -258,7 +258,7 @@ export const generateContactPageSchema = () => {
   return {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "name": "Contact DevSecIT",
+    "name": "Contact DEV SEC IT",
     "url": "https://devsecit.com",
     "telephone": "+91-8101979855",
     "email": "sales@devsecit.com",

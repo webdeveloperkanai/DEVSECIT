@@ -6,8 +6,8 @@ const Custom404: NextPage = () => {
   return (
     <div className="min-h-screen dark:bg-dark-900 light:bg-white transition-colors duration-300 flex flex-col items-center justify-center px-4">
       <Head>
-        <title>Page Not Found - DevSecIT</title>
-        <meta name="description" content="The page you&apos;re looking for doesn&apos;t exist. Return to DevSecIT homepage." />
+        <title>Page Not Found - DEV SEC IT</title>
+        <meta name="description" content="The page you&apos;re looking for doesn&apos;t exist. Return to DEV SEC IT homepage." />
         <link rel="canonical" href="https://devsecit.com/404" />
       </Head>
 

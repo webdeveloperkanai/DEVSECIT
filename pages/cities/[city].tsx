@@ -48,7 +48,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
     '@id': `https://devsecit.com/cities/${city.slug}`,
-    name: `DevSecIT ${city.name}`,
+    name: `DEV SEC IT ${city.name}`,
     description: city.description,
     areaServed: city.state,
     address: {
@@ -64,10 +64,10 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
     mainEntity: [
       {
         '@type': 'Question',
-        name: `What software development services does DevSecIT offer in ${city.name}?`,
+        name: `What software development services does DEV SEC IT offer in ${city.name}?`,
         acceptedAnswer: {
           '@type': 'Answer',
-          text: `DevSecIT offers comprehensive software development services in ${city.name} including custom web applications, mobile app development, API integration, cybersecurity solutions, AI/ML implementation, cloud computing, and enterprise software solutions.`
+          text: `DEV SEC IT offers comprehensive software development services in ${city.name} including custom web applications, mobile app development, API integration, cybersecurity solutions, AI/ML implementation, cloud computing, and enterprise software solutions.`
         }
       },
       {
@@ -200,8 +200,8 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
   // FAQs
   const faqs = [
     {
-      question: `What software development services does DevSecIT offer in ${city.name}?`,
-      answer: `DevSecIT offers comprehensive software development services in ${city.name} including custom web applications, mobile app development (iOS & Android), API development and integration, cybersecurity solutions, AI/ML implementation, cloud computing, e-commerce development, and enterprise software solutions. We serve businesses of all sizes from startups to large enterprises.`
+      question: `What software development services does DEV SEC IT offer in ${city.name}?`,
+      answer: `DEV SEC IT offers comprehensive software development services in ${city.name} including custom web applications, mobile app development (iOS & Android), API development and integration, cybersecurity solutions, AI/ML implementation, cloud computing, e-commerce development, and enterprise software solutions. We serve businesses of all sizes from startups to large enterprises.`
     },
     {
       question: `How long does it take to develop a custom software solution in ${city.name}?`,
@@ -216,11 +216,11 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
       answer: `Yes, we provide comprehensive post-launch support and maintenance services. Our support packages include 24/7 monitoring, bug fixes, security updates, performance optimization, and feature enhancements. We offer flexible SLA-backed support plans tailored to your needs.`
     },
     {
-      question: `Can DevSecIT work with existing systems and legacy applications?`,
+      question: `Can DEV SEC IT work with existing systems and legacy applications?`,
       answer: `Absolutely! We specialize in legacy system modernization and integration. Our team can integrate new solutions with your existing infrastructure, migrate data from legacy systems, and develop APIs to connect disparate systems. We ensure minimal disruption to your current operations.`
     },
     {
-      question: `What technologies does DevSecIT specialize in?`,
+      question: `What technologies does DEV SEC IT specialize in?`,
       answer: `We work with cutting-edge technologies including React, Next.js, Node.js, Python, Flutter, React Native, AWS, Azure, Google Cloud, PostgreSQL, MongoDB, and more. Our team stays updated with the latest technology trends to deliver modern, scalable solutions.`
     }
   ];
@@ -246,16 +246,16 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
   return (
     <div className="min-h-screen dark:bg-dark-900 light:bg-white transition-colors duration-300">
       <Head>
-        <title>{`Best Software Development Company in ${city.name} | Web & Mobile App Development | DevSecIT`}</title>
+        <title>{`Best Software Development Company in ${city.name} | Web & Mobile App Development | DEV SEC IT`}</title>
         <meta name="description" content={`Leading software development company in ${city.name}. Custom web apps, mobile apps, APIs, cybersecurity, AI/ML solutions. 500+ projects delivered. 7-day MVP guarantee. Contact us today!`} />
         <meta name="keywords" content={city.keywords} />
         <link rel="canonical" href={`https://devsecit.com/cities/${city.slug}`} />
-        <meta property="og:title" content={`Top Software Development Services in ${city.name} | DevSecIT`} />
+        <meta property="og:title" content={`Top Software Development Services in ${city.name} | DEV SEC IT`} />
         <meta property="og:description" content={`Professional software development, web apps, mobile apps, and IT services in ${city.name}. Custom solutions for startups and enterprises. Free consultation!`} />
         <meta property="og:url" content={`https://devsecit.com/cities/${city.slug}`} />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`Software Development in ${city.name} | DevSecIT`} />
+        <meta name="twitter:title" content={`Software Development in ${city.name} | DEV SEC IT`} />
         <meta name="twitter:description" content={city.metaDescription} />
         <meta name="robots" content="index, follow" />
         <meta name="geo.region" content={`IN-${city.state}`} />
@@ -272,7 +272,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <Link href="/" className="text-2xl font-display font-bold text-gradient">DevSecIT</Link>
+              <Link href="/" className="text-2xl font-display font-bold text-gradient">DEV SEC IT</Link>
             </div>
             <div className="hidden md:flex space-x-6">
               <a href="#services" className="dark:text-gray-300 light:text-gray-700 hover:text-primary-400 transition-colors">Services</a>
@@ -379,9 +379,9 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
       <section className="py-20 dark:bg-dark-900 light:bg-white transition-colors duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-primary-400 font-semibold text-sm uppercase tracking-wider">Why DevSecIT</span>
+            <span className="text-primary-400 font-semibold text-sm uppercase tracking-wider">Why DEV SEC IT</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 mt-2 dark:text-white light:text-gray-900 transition-colors duration-300">
-              Why Choose DevSecIT in <span className="text-gradient">{city.name}</span>?
+              Why Choose DEV SEC IT in <span className="text-gradient">{city.name}</span>?
             </h2>
             <p className="text-xl dark:text-gray-400 light:text-gray-600 max-w-3xl mx-auto transition-colors duration-300">
               We combine technical excellence with local expertise to deliver outstanding results for {city.name} businesses.
@@ -536,7 +536,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
               Schedule Free Consultation
             </a>
             <a
-              href={`https://wa.me/918101979855?text=Hi DevSecIT, I'm from ${city.name} and interested in software development services`}
+              href={`https://wa.me/918101979855?text=Hi DEV SEC IT, I'm from ${city.name} and interested in software development services`}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-4 border-2 dark:border-green-500 light:border-green-600 rounded-lg font-bold dark:text-green-400 light:text-green-600 hover:bg-green-500/10 transition-all"
@@ -553,7 +553,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
           <div className="text-center mb-16">
             <span className="text-primary-400 font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold mb-4 mt-2 dark:text-white light:text-gray-900 transition-colors duration-300">
-              Contact DevSecIT in <span className="text-gradient">{city.name}</span>
+              Contact DEV SEC IT in <span className="text-gradient">{city.name}</span>
             </h2>
             <p className="text-xl dark:text-gray-400 light:text-gray-600 max-w-3xl mx-auto transition-colors duration-300">
               Ready to transform your business with custom software? Get in touch for a free consultation.
@@ -573,7 +573,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
                   <div className="text-primary-400 font-bold">📞 Phone</div>
                   <div className="dark:text-gray-300 light:text-gray-800 font-semibold">+91 81019 79855</div>
                 </a>
-                <a href={`https://wa.me/918101979855?text=Hi DevSecIT, I'm from ${city.name} and interested in software development services`} target="_blank" rel="noopener noreferrer" className="block p-4 dark:bg-dark-800 light:bg-gray-100 rounded-lg dark:hover:bg-dark-700 light:hover:bg-gray-200 transition-colors">
+                <a href={`https://wa.me/918101979855?text=Hi DEV SEC IT, I'm from ${city.name} and interested in software development services`} target="_blank" rel="noopener noreferrer" className="block p-4 dark:bg-dark-800 light:bg-gray-100 rounded-lg dark:hover:bg-dark-700 light:hover:bg-gray-200 transition-colors">
                   <div className="text-green-400 font-bold">💬 WhatsApp</div>
                   <div className="dark:text-gray-400 light:text-gray-600 text-sm">Chat with us directly</div>
                 </a>
@@ -586,7 +586,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
               <div className="mt-8 p-6 dark:bg-dark-800 light:bg-gray-100 rounded-xl">
                 <h4 className="font-bold dark:text-gray-100 light:text-gray-900 mb-4">Serving {city.name} & {city.region}</h4>
                 <p className="dark:text-gray-400 light:text-gray-600 text-sm">
-                  DevSecIT is a leading software development company serving businesses across {city.name}, {city.state}, and the entire {city.region} region. With a population of {city.population} and growing tech ecosystem, we&apos;re committed to delivering world-class software solutions to local businesses.
+                  DEV SEC IT is a leading software development company serving businesses across {city.name}, {city.state}, and the entire {city.region} region. With a population of {city.population} and growing tech ecosystem, we&apos;re committed to delivering world-class software solutions to local businesses.
                 </p>
               </div>
             </div>
@@ -650,7 +650,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
             <div className="grid md:grid-cols-2 gap-8 dark:text-gray-400 light:text-gray-600">
               <div>
                 <p className="mb-4">
-                  DevSecIT is the leading software development company in {city.name}, {city.state}. We specialize in building custom web applications, mobile apps, APIs, and enterprise software solutions for businesses across {city.region}. Our team of experienced developers, designers, and security experts work together to deliver high-quality solutions that meet your specific needs.
+                  DEV SEC IT is the leading software development company in {city.name}, {city.state}. We specialize in building custom web applications, mobile apps, APIs, and enterprise software solutions for businesses across {city.region}. Our team of experienced developers, designers, and security experts work together to deliver high-quality solutions that meet your specific needs.
                 </p>
                 <p className="mb-4">
                   With over 500 successful projects delivered and 150+ satisfied clients, we have established ourselves as a trusted technology partner for startups, SMEs, and large enterprises in {city.name}. Our commitment to quality, security, and timely delivery has made us the preferred choice for businesses looking for reliable software development services.
@@ -658,7 +658,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
               </div>
               <div>
                 <p className="mb-4">
-                  Our {city.name} office provides dedicated support and ensures that local businesses receive personalized attention. Whether you need a simple website, a complex enterprise application, or cutting-edge AI solutions, DevSecIT has the expertise to bring your vision to life.
+                  Our {city.name} office provides dedicated support and ensures that local businesses receive personalized attention. Whether you need a simple website, a complex enterprise application, or cutting-edge AI solutions, DEV SEC IT has the expertise to bring your vision to life.
                 </p>
                 <p className="mb-4">
                   We follow international best practices in software development, including Agile methodology, DevSecOps, and continuous integration/deployment. Our security-first approach ensures that every solution we build is protected against cyber threats, giving you peace of mind.
@@ -674,7 +674,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <Link href="/" className="text-2xl font-display font-bold text-gradient">DevSecIT</Link>
+              <Link href="/" className="text-2xl font-display font-bold text-gradient">DEV SEC IT</Link>
               <p className="mt-4 dark:text-gray-400 light:text-gray-600 text-sm">
                 Premium software development services in {city.name}. Building the future, one line of code at a time.
               </p>
@@ -707,7 +707,7 @@ const CityPage: NextPage<CityPageProps> = ({ city }) => {
           </div>
           <div className="border-t dark:border-dark-700 light:border-gray-200 pt-8 text-center">
             <p className="dark:text-gray-400 light:text-gray-600 text-sm">
-              © 2025 DevSecIT. All rights reserved. Proudly serving {city.name}, {city.state}, and across India.
+              © 2025 DEV SEC IT. All rights reserved. Proudly serving {city.name}, {city.state}, and across India.
             </p>
           </div>
         </div>
@@ -734,8 +734,7 @@ export const getStaticProps: GetStaticProps<CityPageProps> = async ({ params }) 
   }
 
   return {
-    props: { city },
-    revalidate: 3600
+    props: { city }
   };
 };
 

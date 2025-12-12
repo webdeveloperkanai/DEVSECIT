@@ -19,7 +19,7 @@ const Pricing: NextPage = () => {
     '@type': 'PriceSpecification',
     priceCurrency: 'INR',
     price: 'Custom',
-    description: 'DevSecIT offers flexible pricing models for custom software development, API integration, and cybersecurity services'
+    description: 'DEV SEC IT offers flexible pricing models for custom software development, API integration, and cybersecurity services'
   };
 
   const plans = [
@@ -76,8 +76,8 @@ const Pricing: NextPage = () => {
   return (
     <div suppressHydrationWarning className="min-h-screen dark:bg-dark-900 light:bg-white">
       <Head>
-        <title>Pricing - DevSecIT | Transparent Software Development Costs</title>
-        <meta name="description" content="DevSecIT offers transparent, flexible pricing for custom software development, API integration, and cybersecurity services. No hidden costs." />
+        <title>Pricing - DEV SEC IT | Transparent Software Development Costs</title>
+        <meta name="description" content="DEV SEC IT offers transparent, flexible pricing for custom software development, API integration, and cybersecurity services. No hidden costs." />
         <meta name="keywords" content="pricing, software development cost, API development pricing, cybersecurity pricing, India" />
         <link rel="canonical" href="https://devsecit.com/pricing" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingSchema) }} />

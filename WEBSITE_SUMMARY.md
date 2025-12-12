@@ -1,4 +1,4 @@
-# DevSecIT Website - Complete Overview
+# DEV SEC IT Website - Complete Overview
 
 ## 🎯 PROJECT STATUS: PRODUCTION READY ✅
 

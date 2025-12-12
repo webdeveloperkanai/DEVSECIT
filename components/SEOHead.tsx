@@ -33,9 +33,9 @@ export const SEOHead = ({
       {keywords && <meta name="keywords" content={keywords} />}
       
       {/* Author & Copyright */}
-      <meta name="author" content="DevSecIT" />
-      <meta name="copyright" content="DevSecIT 2025" />
-      <meta name="creator" content="DevSecIT" />
+      <meta name="author" content="DEV SEC IT" />
+      <meta name="copyright" content="DEV SEC IT 2025" />
+      <meta name="creator" content="DEV SEC IT" />
       
       {/* Robots & Crawling */}
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -56,7 +56,7 @@ export const SEOHead = ({
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={title} />
       <meta property="og:url" content={ogUrl} />
-      <meta property="og:site_name" content="DevSecIT" />
+      <meta property="og:site_name" content="DEV SEC IT" />
       <meta property="og:locale" content="en_IN" />
       
       {/* Twitter Card */}
